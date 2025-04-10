@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+API Countries 🌍
+Este projeto é uma aplicação web construída com React e Axios, que permite ao usuário visualizar informações detalhadas sobre diversos países do mundo. A aplicação consome a API pública RestCountries para buscar dados como bandeira, moeda, idiomas e a capital dos países.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📸 Demonstração
+(Adicione aqui capturas de tela ou um link para a aplicação hospedada, caso aplicável)
 
-## Available Scripts
+🚀 Tecnologias Utilizadas
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+Axios: Cliente HTTP baseado em Promises para fazer requisições à API.
+RestCountries API: Fonte de dados sobre países do mundo.
+HTML, CSS e JavaScript: Para estrutura, estilo e funcionalidades.
+📡 Funcionalidades
+Exibir uma lista de países com informações básicas.
+Permitir ao usuário clicar em um país para visualizar detalhes como:
+Bandeira
+Nome oficial
+Capital
+Moeda
+Idiomas
+Pesquisa por nome de país para facilitar a navegação.
+🛠️ Como Executar o Projeto
+Clone o repositório:
 
-In the project directory, you can run:
+bash
+git clone https://github.com/Arthurpereiraa/Api-countries.git
+cd Api-countries
+Instale as dependências:
 
-### `npm start`
+bash
+npm install
+Inicie o servidor de desenvolvimento:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+npm start
+Acesse a aplicação no navegador:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Code
+http://localhost:3000
+🌐 Requisição à API
+A aplicação utiliza a seguinte requisição para buscar os dados dos países:
 
-### `npm test`
+JavaScript
+const response = await axios.get('https://restcountries.com/v3.1/all');
+Os dados retornados pela API incluem informações detalhadas sobre cada país, que são exibidas na interface do usuário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🖼️ Estrutura do Projeto
+Code
+src/
+├── components/
+|   ├── CountryCard.js   # Componente para exibir informações de cada país
+|   ├── CountryDetails.js # Componente para exibir os detalhes do país selecionado
+├── App.js               # Componente principal
+├── index.js             # Ponto de entrada do React
+├── styles/              # Arquivos de estilo CSS
+└── services/
+    └── api.js           # Configuração do Axios
+✨ Melhorias Futuras
+Adicionar paginação para melhorar a navegação por países.
+Implementar filtragem por região ou idioma.
+Adicionar um tema escuro para a interface.
+Melhorar o design responsivo para dispositivos móveis.
+📄 Licença
+Este projeto é de uso livre e não possui licença específica.
