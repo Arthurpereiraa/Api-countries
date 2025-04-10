@@ -9,6 +9,8 @@ React: JavaScript library for building user interfaces.
 Axios: Promise-based HTTP client for making API requests.
 RestCountries API: Data source for information about countries worldwide.
 HTML, CSS, and JavaScript: For structure, styling, and functionality.
+
+
 📡 Features
 Display a list of countries with basic information.
 Allow users to click on a country to view details such as:
